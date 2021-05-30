@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 985 58"
+  >
+    <style>
+      .label.pdu {
+        font-weight: bold;
+      }
+    </style>
+    <rect
+      id="background"
+      x="0"
+      y="0"
+      width="985"
+      height="58"
+      fill="white"
+    />
+    <text
+      data-index="0"
+      data-name="pdu"
+      class="label pdu"
+      x="10"
+      y="17.8"
+      width="225"
+      height="16"
+      textLength="225"
+      lengthAdjust="spacingAndGlyphs"
+      fill="black"
+      font-family="Consolas, Menlo, monospace"
+    >pdu --top-down tmp.sample</text><text
+      data-index="1"
+      data-name="dust"
+      class="label dust"
+      x="10"
+      y="33.8"
+      width="369"
+      height="16"
+      textLength="369"
+      lengthAdjust="spacingAndGlyphs"
+      fill="black"
+      font-family="Consolas, Menlo, monospace"
+    >dust --apparent-size --reverse tmp.sample</text><text
+      data-index="2"
+      data-name="dutree"
+      class="label dutree"
+      x="10"
+      y="49.8"
+      width="153"
+      height="16"
+      textLength="153"
+      lengthAdjust="spacingAndGlyphs"
+      fill="black"
+      font-family="Consolas, Menlo, monospace"
+    >dutree tmp.sample</text>
+    <rect
+      data-index="0"
+      data-name="pdu"
+      class="bar pdu"
+      x="389"
+      y="5"
+      width="16.893250049967513"
+      height="16"
+      fill="red"
+    /><rect
+      data-index="1"
+      data-name="dust"
+      class="bar dust"
+      x="389"
+      y="21"
+      width="73.94006966837236"
+      height="16"
+      fill="green"
+    /><rect
+      data-index="2"
+      data-name="dutree"
+      class="bar dutree"
+      x="389"
+      y="37"
+      width="512"
+      height="16"
+      fill="blue"
+    />
+    <text
+      data-index="0"
+      data-name="pdu"
+      data-value="0.12239138337152176"
+      class="number pdu"
+      x="911"
+      y="17.8"
+      width="54"
+      height="16"
+      fill="black"
+      font-family="Consolas, Menlo, monospace"
+    >0.122s</text><text
+      data-index="1"
+      data-name="dust"
+      data-value="0.535694871415"
+      class="number dust"
+      x="911"
+      y="33.8"
+      width="54"
+      height="16"
+      fill="black"
+      font-family="Consolas, Menlo, monospace"
+    >0.535s</text><text
+      data-index="2"
+      data-name="dutree"
+      data-value="3.7094335371150002"
+      class="number dutree"
+      x="911"
+      y="49.8"
+      width="54"
+      height="16"
+      fill="black"
+      font-family="Consolas, Menlo, monospace"
+    >3.709s</text>
+  </svg>

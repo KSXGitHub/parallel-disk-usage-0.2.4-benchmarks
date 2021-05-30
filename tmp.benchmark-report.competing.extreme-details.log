@@ -1,0 +1,21 @@
+Benchmark #1: pdu --min-ratio=0 tmp.sample
+  Time (mean ± σ):     711.8 ms ±  17.6 ms    [User: 622.1 ms, System: 207.9 ms]
+  Range (min … max):   677.9 ms … 737.4 ms    10 runs
+ 
+Benchmark #2: dutree tmp.sample
+  Time (mean ± σ):      3.729 s ±  0.109 s    [User: 1.468 s, System: 2.261 s]
+  Range (min … max):    3.454 s …  3.848 s    10 runs
+ 
+Benchmark #3: ncdu -o /dev/stdout -0 tmp.sample
+  Time (mean ± σ):     200.6 ms ±   5.6 ms    [User: 72.9 ms, System: 127.4 ms]
+  Range (min … max):   186.4 ms … 208.1 ms    16 runs
+ 
+Benchmark #4: du --apparent-size tmp.sample
+  Time (mean ± σ):     188.9 ms ±   3.7 ms    [User: 54.0 ms, System: 134.5 ms]
+  Range (min … max):   184.7 ms … 196.1 ms    15 runs
+ 
+Summary
+  'du --apparent-size tmp.sample' ran
+    1.06 ± 0.04 times faster than 'ncdu -o /dev/stdout -0 tmp.sample'
+    3.77 ± 0.12 times faster than 'pdu --min-ratio=0 tmp.sample'
+   19.74 ± 0.70 times faster than 'dutree tmp.sample'

@@ -1,0 +1,26 @@
+Benchmark #1: pdu --max-depth=1 tmp.sample
+  Time (mean ± σ):     124.6 ms ±   6.4 ms    [User: 94.3 ms, System: 147.4 ms]
+  Range (min … max):   119.4 ms … 152.2 ms    24 runs
+ 
+Benchmark #2: dutree --summary tmp.sample
+  Time (mean ± σ):     313.3 ms ±   7.0 ms    [User: 105.0 ms, System: 207.8 ms]
+  Range (min … max):   305.6 ms … 325.9 ms    10 runs
+ 
+Benchmark #3: dua --apparent-size tmp.sample
+  Time (mean ± σ):     257.3 ms ±  10.7 ms    [User: 282.7 ms, System: 221.0 ms]
+  Range (min … max):   239.8 ms … 274.6 ms    11 runs
+ 
+Benchmark #4: ncdu -o /dev/null -0 tmp.sample
+  Time (mean ± σ):     204.6 ms ±  18.0 ms    [User: 83.3 ms, System: 120.9 ms]
+  Range (min … max):   185.8 ms … 253.4 ms    11 runs
+ 
+Benchmark #5: du --apparent-size --total tmp.sample
+  Time (mean ± σ):     182.3 ms ±   5.5 ms    [User: 62.0 ms, System: 119.9 ms]
+  Range (min … max):   173.3 ms … 192.1 ms    16 runs
+ 
+Summary
+  'pdu --max-depth=1 tmp.sample' ran
+    1.46 ± 0.09 times faster than 'du --apparent-size --total tmp.sample'
+    1.64 ± 0.17 times faster than 'ncdu -o /dev/null -0 tmp.sample'
+    2.06 ± 0.14 times faster than 'dua --apparent-size tmp.sample'
+    2.51 ± 0.14 times faster than 'dutree --summary tmp.sample'

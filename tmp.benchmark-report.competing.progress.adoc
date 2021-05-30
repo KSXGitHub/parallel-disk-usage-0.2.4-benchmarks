@@ -1,0 +1,16 @@
+[cols="<,>,>"]
+|===
+| Command | Mean [ms] | Min…Max [ms]
+
+| `pdu --progress tmp.sample`
+| 207.8 ± 1.4
+| 206.6…212.3
+
+| `ncdu -o /dev/stdout -1 tmp.sample`
+| 202.8 ± 6.6
+| 192.3…216.2
+
+| `gdu --show-apparent-size --non-interactive tmp.sample`
+| 305.3 ± 10.1
+| 285.8…315.2
+|===
